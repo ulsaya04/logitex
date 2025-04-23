@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Logitex — Оставить заявку</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Свяжитесь с Logitex</h1>
+    <p>Оставьте ваши контактные данные и опишите интересующую услугу</p>
+
+    <form id="contactForm">
+      <input type="text" id="fullname" placeholder="Полное имя" required>
+      <input type="tel" id="phone" placeholder="Телефон" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="service" placeholder="Какая услуга вас интересует?" required></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+
+    <div id="status"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
