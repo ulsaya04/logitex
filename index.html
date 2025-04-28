@@ -2,24 +2,50 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Logitex — Оставить заявку</title>
+  <title>Logitex — Связаться</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Свяжитесь с Logitex</h1>
-    <p>Оставьте ваши контактные данные и опишите интересующую услугу</p>
+  <header>
+    <div class="overlay-text">
+      <h1>Logitex</h1>
+      <p>Инфраструктурные IT-решения по всему Казахстану</p>
+    </div>
+  </header>
 
-    <form id="contactForm">
-      <input type="text" id="fullname" placeholder="Полное имя" required>
-      <input type="tel" id="phone" placeholder="Телефон" required>
-      <input type="email" id="email" placeholder="Email" required>
-      <textarea id="service" placeholder="Какая услуга вас интересует?" required></textarea>
-      <button type="submit">Отправить</button>
-    </form>
+  <!-- О компании в контейнере -->
+  <section class="about">
+    <div class="container">
+      <h2>О компании</h2>
+      <p>
+        Мы проектируем, поставляем и обслуживаем современные инженерные и IT-системы:
+        видеонаблюдение, контроль доступа, АТС, охранные и пожарные системы, серверные,
+        видеоконференцсвязь и многое другое.
+      </p>
+    </div>
+  </section>
 
-    <div id="status"></div>
-  </div>
+  <!-- Оформляем форму в контейнер -->
+  <section class="contact-form">
+    <div class="container">
+      <h2>Оставьте заявку</h2>
+      <form id="tg-form">
+        <input type="text" id="name" placeholder="Ваше имя" required>
+        <input type="tel" id="phone" placeholder="Телефон" required>
+        <input type="email" id="email" placeholder="Email">
+        <textarea id="message" placeholder="Комментарий..." rows="4"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+    <p id="status-msg"></p>
+  </section>
+
+  <footer>
+    <div class="container">
+      © 2025 Logitex. Все права защищены.
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
